@@ -1,0 +1,23 @@
+{
+  "name": "ai-business-manager",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --no-warnings tests/guards.test.ts && node tests/logic.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@supabase/supabase-js": "^2.119.2"
+  },
+  "devDependencies": {
+    "vite": "^6.4.6"
+  }
+}
