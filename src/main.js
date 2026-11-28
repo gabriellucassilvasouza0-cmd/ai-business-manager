@@ -1,6 +1,6 @@
 // Inicialização, autenticação, rotas, ações e formulários.
 import '@fontsource-variable/plus-jakarta-sans';
-import '@fontsource/instrument-serif/400-italic.css';
+import '@fontsource-variable/bricolage-grotesque';
 import './styles.css';
 import { sb, errMsg, loadOrgs, loadAll, selectOrg, createOrg, updateOrg, saveProduct, deleteProduct, saveCustomer, deleteCustomer, createSale, setSaleStatus, createCampaign, updateCampaignMessage, approveCampaign, deleteCampaign, updateAutomation, setProductPrice } from './data.js';
 import { state, metrics, prod, cust, custStats, isAdmin, ORIGINS, STATUS, saleTotal } from './store.js';

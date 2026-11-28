@@ -41,7 +41,7 @@ export function viewDashboard() {
   const month = new Date().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
 
   const hero = '<section class="hero rise"' + R(0) + '><div class="hero-main"><p class="hero-eyebrow">' + esc(state.org.name) + ' · últimos 30 dias</p>' +
-    '<h1 class="hero-title">' + hi + (first ? ', ' + esc(first) : '') + '. ' + (F.length ? '<em>' + F.length + ' ' + pl(F.length, 'ponto pede', 'pontos pedem') + '</em> atenção hoje.' : 'Tudo <em>em dia</em> por aqui.') + '</h1>' +
+    '<h1 class="hero-title">' + hi + (first ? ', ' + esc(first) : '') + '. ' + (F.length ? F.length + ' ' + pl(F.length, 'ponto pede', 'pontos pedem') + ' atenção hoje.' : 'Tudo em dia por aqui.') + '</h1>' +
     '<p class="hero-sub">A Ipê lê os números da sua empresa antes de sugerir qualquer coisa, e nada muda no sistema sem a sua aprovação.</p>' +
     '<div class="hero-cta"><a class="btn btn-orange" href="#ia">' + icon('sparkles') + 'Perguntar à Ipê</a><button type="button" class="btn btn-on-ink" data-action="sale-new">' + icon('plus') + 'Nova venda</button></div></div>' +
     (faces.length ? '<div class="hero-side"><div class="av-stack" aria-label="Clientes que mais compraram">' + faces.map((x, i) => '<span class="av ' + TINTS[i % 4] + '" title="' + esc(x.c.name) + '">' + esc(initials(x.c.name)) + '</span>').join('') + '</div><p class="hero-note"><span class="live-dot"></span>' + m.active.length + ' ' + pl(m.active.length, 'cliente ativo', 'clientes ativos') + '</p></div>' : '') +
